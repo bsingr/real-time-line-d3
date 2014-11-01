@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../real_time_line.css" />
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../real_time_line.js"></script>
+<script>
+
+var dataProvider = [];
+setInterval(function(){
+  dataProvider.push(Math.sqrt(Math.random()));
+}, 1000)
+
+var realTimeLine = new RealTimeLine(dataProvider, {resolution: 30});
+realTimeLine.tick();
+
+</script>
