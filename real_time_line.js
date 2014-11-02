@@ -75,7 +75,7 @@ function RealTimeLine(dataProvider, config){
     if (!nextValue) {
       nextValue = 0;
     }
-    data.splice(data.length - 1, 0, nextValue);
+    data.push(nextValue);
 
     // redraw the line, and slide it to the left
     path
