@@ -14,6 +14,7 @@
 
 ### app.js
 
+```javascript
 	function DataProvider(){
 	    var data = [];
 	    setInterval(function(){
@@ -27,6 +28,7 @@
 	var dataProvider = new DataProvider();
 	var realTimeLine = new RealTimeLine(dataProvider, {resolution: 30});
 	realTimeLine.tick();
+```
 
 ## License
 
