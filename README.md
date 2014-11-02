@@ -6,9 +6,11 @@
 
 ### index.html
 
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="real_time_line.js"></script>
-	<script src="app.js"></script>
+```html
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="real_time_line.js"></script>
+<script src="app.js"></script>
+```
 
 ### app.js
 
