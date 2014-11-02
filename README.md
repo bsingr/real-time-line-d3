@@ -15,19 +15,19 @@
 ### app.js
 
 ```javascript
-	function DataProvider(){
-	    var data = [];
-	    setInterval(function(){
-	      data.push(Math.sqrt(Math.random()));
-	    }, 1000);
-	    this.shift = function(){
-	        return data.shift();
-	    }
-	}
-	
-	var dataProvider = new DataProvider();
-	var realTimeLine = new RealTimeLine(dataProvider, {resolution: 30});
-	realTimeLine.tick();
+function DataProvider(){
+    var data = [];
+    setInterval(function(){
+      data.push(Math.sqrt(Math.random()));
+    }, 1000);
+    this.shift = function(){
+        return data.shift();
+    }
+}
+
+var dataProvider = new DataProvider();
+var realTimeLine = new RealTimeLine(dataProvider, {resolution: 30});
+realTimeLine.tick();	
 ```
 
 ## License
